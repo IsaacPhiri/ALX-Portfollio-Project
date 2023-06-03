@@ -1,0 +1,11 @@
+<h2>Delivery Details</h2>
+<p>Recipient Name: {{ delivery[1] }}</p>
+<p>Delivery Address: {{ delivery[2] }}</p>
+<p>Delivery Status: {{ delivery[3] }}</p>
+<p>Expected Delivery Date: {{ delivery[4] }}</p>
+<p>Package Contents: {{ delivery[5] }}</p>
+<p>Tracking Information: {{ delivery[6] }}</p>
+  {% if delivery[7] %}
+<img src="{{ url_for('static', filename='uploads/' + delivery[7]) }}" alt="Package Contents">
+  {% endif %}
+<a href="tel:{{ delivery[8] }}" class="btn btn-primary">Contact Driver/Company</a>

@@ -1,0 +1,88 @@
+.main_container {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.sign_in_cont {
+   margin-top: 2rem;
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   width: 400px;
+   padding: 2rem;
+   box-shadow: 2px 7px 15px -1px rgba(0, 0, 0, 0.5);
+   margin: 4rem auto 1rem;
+
+}
+
+.sign-up-form {
+   padding: 1rem 2rem;
+}
+
+input {
+   outline: none;
+   padding: 10px;
+   border: none;
+   border-radius: 5px;
+
+}
+
+.forgot_p {
+   color: var(--primary);
+   font-style: italic;
+}
+
+.input {
+   border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.password-cont {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+   border: 1px solid rgba(0, 0, 0, 0.2);
+   padding-right: 5px;
+   border-radius: 5px;
+}
+
+.password-cont>input {
+   width: 100%;
+}
+
+input[type=button] {
+   background: var(--primary);
+   color: var(--white);
+   cursor: pointer;
+}
+
+.classsss {
+   color: rgba(0, 0, 0, 0.4);
+   cursor: pointer;
+}
+
+.form_text {
+   text-align: center;
+}
+
+.errors, .errors > li, .error-message {
+    list-style: none;
+    color: red;
+    font-size: 12px;
+}
+
+.form_text > a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+@media (max-width : 600px) {
+   form {
+      width: 85%;
+   }
+}

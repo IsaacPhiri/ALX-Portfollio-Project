@@ -1,0 +1,41 @@
+<h1>Create Driver</h1>
+<form method="POST">
+    {{ form.hidden_tag() }}
+    <div class="form-group">
+        {{ form.first_name.label }} {{ form.first_name(class="form-control") }}
+        {% for error in form.first_name.errors %}
+        <span class="text-danger">{{ error }}</span>
+        {% endfor %}
+    </div>
+    <div class="form-group">
+        {{ form.last_name.label }} {{ form.last_name(class="form-control") }}
+        {% for error in form.last_name.errors %}
+        <span class="text-danger">{{ error }}</span>
+        {% endfor %}
+    </div>
+    <div class="form-group">
+        {{ form.contact.label }} {{ form.contact(class="form-control") }}
+        {% for error in form.contact.errors %}
+        <span class="text-danger">{{ error }}</span>
+        {% endfor %}
+    </div>
+    <div class="form-group">
+        {{ form.nrc.label }} {{ form.nrc(class="form-control") }}
+        {% for error in form.nrc.errors %}
+        <span class="text-danger">{{ error }}</span>
+        {% endfor %}
+    </div>
+    <div class="form-group">
+        {{ form.license_plate.label }} {{ form.license_plate(class="form-control") }}
+        {% for error in form.license_plate.errors %}
+        <span class="text-danger">{{ error }}</span>
+        {% endfor %}
+    </div>
+    <div class="form-group">
+        {{ form.car_model.label }} {{ form.car_model(class="form-control") }}
+        {% for error in form.car_model.errors %}
+        <span class="text-danger">{{ error }}</span>
+        {% endfor %}
+    </div>
+    {{ form.submit(class="btn btn-primary") }}
+</form>
